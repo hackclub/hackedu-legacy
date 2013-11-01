@@ -14,8 +14,12 @@
       <li><a href="/">Home</a></li>
     </ul>
     <ul class="nav navbar-nav pull-right">
-      <li><a href="/login">Login</a></li>
-      <li><a href="/sign_up">Sign Up</a></li>
+      {{if .user}}
+        <li><a href="/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{end}}
     </ul>
   </div>
 </nav>

@@ -1,0 +1,58 @@
+{{set . "title" "Sign Up | HackEDU"}}
+{{template "header.html" .}}
+{{template "navbar.html" .}}
+
+<div class="container">
+  <div class="page-header">
+    <h1>Sign Up</h1>
+  </div>
+
+  {{template "flash.html" .}}
+
+  <form role="form" action="{{url "Authentication.RegisterUser"}}"
+    method="POST">
+    <div class="row">
+      <div class="col-lg-3">
+        {{with $field := field "user.FirstName" .}}
+          <div class="form-group">
+            <label for="{{$field.Name}}">First name</label>
+            <input type="text" class="form-control" name="{{$field.Name}}"
+              id="{{$field.Name}}" placeholder="First name">
+          </div>
+        {{end}}
+        {{with $field := field "user.LastName" .}}
+          <div class="form-group">
+            <label for="{{$field.Name}}">Last name</label>
+            <input type="text" class="form-control" name="{{$field.Name}}"
+              id="{{$field.Name}}" placeholder="Last name">
+          </div>
+        {{end}}
+        {{with $field := field "user.Email" .}}
+          <div class="form-group">
+            <label for="{{$field.Name}}">Email</label>
+            <input type="email" class="form-control" name="{{$field.Name}}"
+              id="{{$field.Name}}" placeholder="Email">
+          </div>
+        {{end}}
+        {{with $field := field "user.Password" .}}
+          <div class="form-group">
+            <label for="{{$field.Name}}">Password</label>
+            <input type="password" class="form-control" name="{{$field.Name}}"
+              id="{{$field.Name}}" placeholder="Password">
+          </div>
+        {{end}}
+        {{with $field := field "verifyPassword" .}}
+          <div class="form-group">
+            <label for="{{$field.Name}}">Verify Password</label>
+            <input type="password" class="form-control" name="{{$field.Name}}"
+              id="{{$field.Name}}" placeholder="Verify password">
+          </div>
+        {{end}}
+        <button type="submit" value="RegisterUser" class="btn btn-default">
+          Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+{{template "footer.html" .}}

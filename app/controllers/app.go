@@ -4,8 +4,12 @@ import "github.com/robfig/revel"
 
 type App struct {
 	*revel.Controller
+	Authentication
 }
 
 func (c App) Index() revel.Result {
-	return c.Render()
+	if c.connected() != nil {
+		return c.RenderTemplate("Users/Index.html")
+	}
+	return c.RenderTemplate("App/Index.html")
 }

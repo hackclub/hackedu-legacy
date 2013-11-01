@@ -15,7 +15,10 @@ GET     /public/*filepath                       Static.Serve("public")
 # Authentication
 
 GET     /login                                  Authentication.Login
-GET     /sign_up                                Authentication.SignUp
+POST    /login                                  Authentication.LoginUser
+GET     /register                               Authentication.RegisterUser
+POST    /register                               Authentication.RegisterUser
+GET     /logout                                 Authentication.LogoutUser
 
 # Catch all
 *       /:controller/:action                    :controller.:action
