@@ -11,12 +11,8 @@ func (t AppTest) TestThatIndexPageContainsHackEdu() {
   t.AssertContains("HackEDU")
 }
 
-func (t AppTest) TestThatIndexPageContainsLoginButton() {
+func (t AppTest) TestThatIndexPageContainsAuthenticationButtons() {
   t.Get("/")
   t.AssertContains("Login")
-}
-
-func (t AppTest) TestThatIndexPageContainsSignUpButton() {
-  t.Get("/")
   t.AssertContains("Sign Up")
 }
