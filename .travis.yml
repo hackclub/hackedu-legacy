@@ -1,12 +1,10 @@
 language: go
 go: 1.1
-
+services:
+  - memcache # github.com/robfig/revel/cache
 install:
-  - export PATH=$PATH:$HOME/$GOPATH/bin
-  # Build Revel.
-  # 
-  # Annoyingly, we can not use go get revel/... because references to
-  # app/routes package fail
+  - export PATH=$PATH:$HOME/gopath/bin
+  # Annoyingly, we can not use go get revel/... because references to app/routes package fail
   - go get -v github.com/robfig/revel/revel
   - go get -v github.com/robfig/revel/cache
   - go get -v github.com/robfig/revel/harness
@@ -16,8 +14,10 @@ install:
   - go get -v github.com/robfig/cron
   - go get -v github.com/robfig/goauth2/oauth
   - go get -v github.com/mrjones/oauth
-  # Now for hackEDU...
-  - go get -v github.com/hackedu/hackedu/app
-
 script:
+  - go test github.com/robfig/revel
+  - go test github.com/robfig/revel/cache
+  - go test github.com/robfig/revel/harness
+
+  # hackEDU time
   - revel test github.com/hackedu/hackedu
