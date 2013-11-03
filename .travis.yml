@@ -1,0 +1,8 @@
+language: go
+go: 1.1
+
+install:
+  - go get -v app
+
+script:
+  - revel test github.com/hackedu/hackedu
