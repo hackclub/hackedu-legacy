@@ -1,7 +1,6 @@
 package tests
 
 import (
-	"fmt"
 	"github.com/hackedu/hackedu/app/models"
 	"github.com/robfig/revel"
 	"net/url"
@@ -73,7 +72,6 @@ func (t *AuthenticationTest) TestLogout() {
 	user := newUser()
 
 	submitUserRegisterForm(t, &user)
-	fmt.Println(string(t.ResponseBody))
 
 	t.Get("/logout")
 	t.AssertContains("Register")
