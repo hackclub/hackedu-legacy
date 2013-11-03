@@ -2,7 +2,7 @@ language: go
 go: 1.1
 
 install:
-  - export PATH=$PATH:$HOME/gopath/bin
+  - export PATH=$PATH:$HOME/$GOPATH/bin
   - go get -v github.com/hackedu/hackedu/app
 
 script:
