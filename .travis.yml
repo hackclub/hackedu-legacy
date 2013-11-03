@@ -2,7 +2,7 @@ language: go
 go: 1.1
 
 install:
-  - go get -v app
+  - go get -v github.com/hackedu/hackedu/app
 
 script:
   - revel test github.com/hackedu/hackedu
