@@ -16,7 +16,7 @@ GET     /public/*filepath                       Static.Serve("public")
 
 GET     /login                                  Authentication.Login
 POST    /login                                  Authentication.LoginUser
-GET     /register                               Authentication.RegisterUser
+GET     /register                               Authentication.Register
 POST    /register                               Authentication.RegisterUser
 GET     /logout                                 Authentication.LogoutUser
 
