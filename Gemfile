@@ -31,6 +31,18 @@ gem "haml-rails"
 gem "foundation-rails"
 gem "figaro"
 
+group :development, :test do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "shoulda"
+  gem "launchy"
+  gem "faker"
+  gem "factory_girl_rails"
+  gem "guard-livereload"
+  gem "guard-zeus"
+  gem "zeus"
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem "sdoc", require: false
