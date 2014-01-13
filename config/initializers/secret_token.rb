@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Hackedu::Application.config.secret_key_base = '7ca1784ec32dd1b0d994e856446e95c281410c92eb2ed6f2a1b0bf574af45d1044bcf063419dd4466253c718ed8f9fbf1716a03dd3a963750014e8bcfbb23f8c'
+HackEDU::Application.config.secret_key_base = Figaro.env.application_secret

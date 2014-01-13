@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Hackedu::Application.load_tasks
+hackEDU::Application.load_tasks
