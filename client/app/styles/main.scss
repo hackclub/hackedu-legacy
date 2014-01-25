@@ -1,3 +1,14 @@
+$include-html-global-classes: false;
+@import "foundation/components/global";
+
 .angular-google-map-container {
-  height: 500px;
+  height: 200px;
+
+  @media #{$medium-up} {
+    height: 300px;
+  }
+
+  @media #{$large-up} {
+    height: 500px;
+  }
 }
