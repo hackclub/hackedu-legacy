@@ -17,3 +17,17 @@ $include-html-global-classes: false;
     height: 500px;
   }
 }
+
+.introduction {
+  background-color: #5679AD;
+
+  h1 {
+    color: #fff;
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+
+    @media #{$medium-up} {
+      margin: 150px 0 150px 0;
+    }
+  }
+}
