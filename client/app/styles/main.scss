@@ -1,5 +1,10 @@
 $include-html-global-classes: false;
 @import "foundation/components/global";
+@import url(http://fonts.googleapis.com/css?family=Amaranth:700);
+
+.title {
+  font-family: "Amaranth", "Open Sans", "Helvetica Neue",  sans-serif;
+}
 
 .angular-google-map-container {
   height: 200px;
