@@ -148,9 +148,6 @@ module.exports = function (grunt) {
       }
     },
 
-
-
-
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
