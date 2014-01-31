@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('clientApp', [
+angular.module('hackedu', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

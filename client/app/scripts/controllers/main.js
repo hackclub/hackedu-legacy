@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('clientApp')
+angular.module('hackedu')
   .controller('MainCtrl', function ($scope) {
     $scope.map = {
       center: {
@@ -28,7 +28,7 @@ angular.module('clientApp')
     ];
   });
 
-angular.module('clientApp')
+angular.module('hackedu')
   .controller('NavCtrl', function ($scope, $location) {
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
