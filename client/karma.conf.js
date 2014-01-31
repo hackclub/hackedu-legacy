@@ -11,12 +11,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'https://maps.googleapis.com/maps/api/js?sensor=false',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/angular-resource/angular-resource.js',
       'app/bower_components/angular-cookies/angular-cookies.js',
       'app/bower_components/angular-sanitize/angular-sanitize.js',
       'app/bower_components/angular-route/angular-route.js',
+      'app/bower_components/underscore/underscore.js',
+      'app/bower_components/angular-google-maps/dist/angular-google-maps.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
