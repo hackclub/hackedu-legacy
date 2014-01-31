@@ -3,7 +3,7 @@ exports.config = {
   specs: ['./test/integration/*.js'],
 
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'phantomjs'
   },
 
   jasmineNodeOpts: {
