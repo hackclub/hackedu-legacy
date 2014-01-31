@@ -1,0 +1,17 @@
+@import "variables";
+@import "foundation/functions";
+@import "foundation/components/global";
+
+$tabbar-bg: $hackedu-red;
+
+$topbar-bg: $hackedu-red;
+
+$topbar-height: 60px;
+
+$topbar-title-weight: bold;
+$topbar-title-font-size: rem-calc(30);
+
+$topbar-link-font-size: rem-calc(16);
+$topbar-link-bg-hover: $hackedu-red;
+
+@import "foundation";
