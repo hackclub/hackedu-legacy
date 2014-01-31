@@ -162,7 +162,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+          config: '.compass.rb'
         }
       },
       server: {
