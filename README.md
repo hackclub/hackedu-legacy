@@ -1,4 +1,4 @@
 # hackEDU
 
-HackEDU provides students resources to start computer science clubs at their
-high schools.
+hackEDU helps students start programming clubs at their high schools. This is
+our website.
