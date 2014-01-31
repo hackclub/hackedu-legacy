@@ -7,7 +7,7 @@ angular.module('hackedu')
         latitude: 36,
         longitude: -101
       },
-      zoom: 4
+      zoom: 3
     };
     
     $scope.schools = [
