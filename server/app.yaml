@@ -4,8 +4,5 @@ runtime: go
 api_version: go1
 
 handlers:
-- url: /
-  static_dir: dist
-
-skip_files:
-- ^client/.*$
+- url: /.*
+  script: _go_app
