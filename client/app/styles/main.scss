@@ -35,7 +35,7 @@ $include-html-global-classes: false;
 }
 
 .call-to-action {
-  background-color: $hackedu-black;
+  background-color: $hackedu-green;
   text-align: center;
 
   padding: 50px 0 50px 0;
@@ -57,9 +57,13 @@ $include-html-global-classes: false;
 
   .button {
     background-color: #fff;
-    color: $hackedu-black;
+    color: scale-color($hackedu-green, $lightness: -10%);
     font-size: rem-calc(20);
+    font-weight: bold;
 
+    @media #{$medium-up} {
+      font-size: rem-calc(24);
+    }
   }
 
   .outline-outward:before {
