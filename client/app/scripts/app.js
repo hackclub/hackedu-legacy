@@ -17,5 +17,7 @@ angular.module('hackedu', [
         redirectTo: '/'
       });
 
-    $locationProvider.html5Mode(true);
+    if (window.history && window.history.pushState) {
+      $locationProvider.html5Mode(true);
+    }
   });
