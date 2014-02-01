@@ -59,5 +59,10 @@ $include-html-global-classes: false;
     background-color: #fff;
     color: $hackedu-black;
     font-size: rem-calc(20);
+
+  }
+
+  .outline-outward:before {
+    border-color: #fff;
   }
 }
