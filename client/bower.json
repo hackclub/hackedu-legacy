@@ -11,7 +11,7 @@
     "angular-sanitize": "1.2.6",
     "angular-route": "1.2.6",
     "angular-google-maps": "~1.0.5",
-    "Hover.css": "git://github.com/IanLunn/Hover"
+    "Hover.css": "git://github.com/zachlatta/Hover"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
