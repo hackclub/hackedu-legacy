@@ -1,6 +1,11 @@
 {
-  "name": "client",
-  "version": "0.0.0",
+  "name": "hackEDU",
+  "description": "hackEDU's official website",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackedu/hackedu.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
