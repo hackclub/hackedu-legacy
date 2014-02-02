@@ -144,7 +144,10 @@ module.exports = function (grunt) {
       app: {
         html: '<%= yeoman.app %>/index.html',
         ignorePath: '<%= yeoman.app %>/',
-        exclude: ['bower_components/foundation/css/foundation.css']
+        exclude: [
+          'bower_components/foundation/css/foundation.css',
+          'bower_components/Hover.css/css/hover.css'
+        ]
       }
     },
 
