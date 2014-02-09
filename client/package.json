@@ -47,7 +47,8 @@
     "karma": "~0.10.9",
     "karma-ng-html2js-preprocessor": "~0.1.0",
     "protractor": "~0.17.0",
-    "grunt-protractor-runner": "~0.2.1"
+    "grunt-protractor-runner": "~0.2.1",
+    "connect-modrewrite": "~0.5.11"
   },
   "engines": {
     "node": ">=0.8.0"
