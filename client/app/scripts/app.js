@@ -13,6 +13,10 @@ angular.module('hackedu', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/apply', {
+        templateUrl: 'views/apply.html',
+        controller: 'ApplyCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

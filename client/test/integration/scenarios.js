@@ -8,6 +8,12 @@ var Homepage = function() {
   };
 };
 
+var Register = function() {
+  this.get = function() {
+    browser.get('/register');
+  };
+};
+
 describe('homepage', function() {
   it('should have the hackedu name', function() {
     var homepage = new Homepage();
@@ -15,4 +21,8 @@ describe('homepage', function() {
 
     expect(homepage.navbarName.getText()).toEqual('hackEDU');
   });
+});
+
+describe('register', function() {
+  it('should contain login')
 });

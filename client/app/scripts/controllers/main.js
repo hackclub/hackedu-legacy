@@ -26,11 +26,28 @@ angular.module('hackedu')
         }
       }
     ];
-  });
-
-angular.module('hackedu')
+  })
   .controller('NavCtrl', function ($scope, $location) {
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
+    };
+  })
+  .controller('ApplyCtrl', function ($scope, $location) {
+    $scope.isActive = function (viewLocation) {
+      return viewLocation === $location.path();
+    };
+  });
+
+angular.module('hackedu')
+  .directive('match', function($parse) {
+    return {
+      require: 'ngModel',
+      link: function(scope, elem, attrs, ctrl) {
+        scope.$watch(function() {
+          return $parse(attrs.match)(scope) === ctrl.$modelValue;
+        }, function(currentValue) {
+          ctrl.$setValidity('mismatch', currentValue);
+        });
+      }
     };
   });
